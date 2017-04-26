@@ -63,16 +63,64 @@
                 	</section>
 
                 	<section>
+						<p>Conferences and Talks</p>
+                	</section>
+
+                	<section>
 						<p>R Shiny extends directly to an analysis tool</p>
                 	</section>
                 </section>
 
-				<section> <!-- Alex -->
-					<h3></h3>
-				</section>
-
 				<section> <!-- Aaron -->
 					<h3>DEMO!</h3>
+					<section>
+					</section>
+
+					<section>
+						<h3>Three Parts of a Shiny Interactive:</h3>
+						<li class = "fragment">User Interface (local or online)</li>
+						<li class = "fragment">Server (where the R session runs)</li>
+						<li class = "fragment">shinyApp (ties 1. and 2. together)</li>
+					</section>
+
+					<section>
+						<h3>Template</h3>
+						<p class = "fragment">library(shiny)</p>
+						<p class = "fragment">ui <- fluidPage()</p>
+						<p class = "fragment">server <- function(input, output){}</p>
+						<p class = "fragment">shinyApp(ui = ui, server = server)</p>
+					</section>
+
+					<section>
+						<h3>User Interface (inputs and outputs)</h3>
+						<p class = "fragment">*Input() functions -> create input$/<id> objects</p>
+						<li class = "fragment">selectInput()</li>
+						<li class = "fragment">sliderInput()</li>
+						<p class = "fragment">*Output() function -> display output$&lt;id&gt; objects</p>
+						<li class = "fragment">plotOutput()</li>
+					</section>
+
+					<section>
+						<h3>Server (R session)</h3>
+						<p class = "fragment">Reactivity</p>
+						<li class = "fragment">when input$<id> changes, the server reacts</li>
+						<li class = "fragment">when output$<id> changes, the ui reacts</li>
+						<p class = "fragment">render*({}) functions -> create output$<id> objects</p>
+						<li class = "fragment">renderPlot({})</li>
+					</section>
+
+                    <section>
+                        <img src="flowchart.png"  height="768" width="1024">  </li>
+                    </section>
+
+					<section>
+						<h3>Common Mistakes</h3>
+						<p class = "fragment">Commas</p>
+						<p class = "fragment">Parentheses</p>
+						<p class = "fragment">renderPlot({ })</p>
+					</section>
+
+
 				</section>
 
 				<section>
@@ -81,7 +129,7 @@
 					</section>
 
 					<section>
-						<h3>Urban Institute ggplot2 theme</h3>
+						<h3><a href="https://github.com/UrbanInstitute/urban_R_theme">Urban Institute ggplot2 theme</a></h3>
 						<!-- TODO(aaron): add image without css/theme -->
 						<!-- TODO(aaron): add image without css -->
 					</section>
