@@ -45,14 +45,14 @@
                     </section>
 
                     <section>
-                        <iframe src="http://shinyapps-stg.urban.org/dynasim-shiny1/" width="2000" height="700"></iframe>
+                        <iframe src="http://shinyapps-stg.urban.org/dynasim-shiny2/" width="3000" height="700"></iframe>
                     </section>
 
                 </section>
 
 				<section> <!-- Alex -->
 					<section>
-						<h3>Motivation 2: </h3>
+						<h3>Motivation 2: Conferences and Talks</h3>
 					</section>
 				</section>
 
@@ -62,14 +62,17 @@
                 		<h3>Motivation 3: Mock-ups for Comms or Lightweight Features</h3>
                 	</section>
 
-                <section>
-                  <h3>Disclaimer:</h3>
-                  <p>Before starting any work for Urban.org, please contact:</p>
-                  <li>Ben Chartoff</li>
-                  <li>David Connell</li>
-                  <li>John</li> <!--TODO: aaron-->
-                </section>
+                    <section>
+                        <iframe src="http://shinyapps-stg.urban.org/dynasim-shiny1/" width="3000" height="700"></iframe>
+                    </section>
 
+                <section>
+                  <h3>Stop, Disclaimer, Warning:</h3>
+                  <p>Before starting any work for Urban.org, please contact:</p>
+                  <li><a href ="bchartof@urban.org">Ben Chartoff</a></li>
+                  <li><a href ="dconnell@urban.org">David Connell</a></li>
+                  <li><a href ="jwehmann@urban.org">John Wehmann</a></li>
+                </section>
 
                 	<section>
 						<p>Conferences and Talks</p>
@@ -86,9 +89,10 @@
 					</section>
 
 					<section>
-						<h3>Three Parts of a Shiny Interactive:</h3>
+						<h3>Four Parts of a Shiny Interactive:</h3>
+						<li class = "fragment">Global Objects and Packages</li>
 						<li class = "fragment">User Interface (local or online)</li>
-						<li class = "fragment">Server (where the R session runs)</li>
+						<li class = "fragment">Server (R session)</li>
 						<li class = "fragment">shinyApp (ties 1. and 2. together)</li>
 					</section>
 
@@ -101,20 +105,27 @@
 					</section>
 
 					<section>
+						<h3>Global Objects</h3>
+						<p class = "fragment">library()</p>
+						<p class = "fragment">data sets</p>
+						<p class = "fragment"><i>Runs Once</i></p>
+					</section>
+
+					<section>
 						<h3>User Interface (inputs and outputs)</h3>
-						<p class = "fragment">*Input() functions -> create input$/<id> objects</p>
+						<p class = "fragment">*Input() functions (create input$&lt;id&gt; objects)</p>
 						<li class = "fragment">selectInput()</li>
 						<li class = "fragment">sliderInput()</li>
-						<p class = "fragment">*Output() function -> display output$&lt;id&gt; objects</p>
+						<p class = "fragment">*Output() functions (display output$&lt;id&gt; objects)</p>
 						<li class = "fragment">plotOutput()</li>
 					</section>
 
 					<section>
 						<h3>Server (R session)</h3>
-						<p class = "fragment">Reactivity</p>
-						<li class = "fragment">when input$<id> changes, the server reacts</li>
-						<li class = "fragment">when output$<id> changes, the ui reacts</li>
-						<p class = "fragment">render*({}) functions -> create output$<id> objects</p>
+						<p class = "fragment"><i>Reactivity</i></p>
+						<li class = "fragment">when input$&lt;id&gt; changes, the server reacts</li>
+						<li class = "fragment">when output$&lt;id&gt; changes, the ui reacts</li>
+						<p class = "fragment">render*({}) functions (create output$&lt;id&gt; objects)</p>
 						<li class = "fragment">renderPlot({})</li>
 					</section>
 
@@ -127,8 +138,9 @@
 						<p class = "fragment">Commas</p>
 						<p class = "fragment">Parentheses</p>
 						<p class = "fragment">renderPlot({ })</p>
+						<p class = "fragment">inputId not inputID</p>
+						<p class = "fragment">quoted and unquoted objects</p>
 					</section>
-
 
 				</section>
 
@@ -139,13 +151,10 @@
 
 					<section>
 						<h3><a href="https://github.com/UrbanInstitute/urban_R_theme">Urban Institute ggplot2 theme</a></h3>
-						<!-- TODO(aaron): add image without css/theme -->
-						<!-- TODO(aaron): add image without css -->
 					</section>
 
 					<section>
 						<h3>Cascading Style Sheets</h3>
-						<!-- TODO(aaron): add image without css/theme -->
 					</section>
 
 					<section>
@@ -155,11 +164,9 @@
 
 					<section>
 						<h3>Continuous Deployment with Codeship and Github Asks:</h3>
-						<p>To request an R package for the Shiny server, please request it using [GitHub issues](https://github.com/UI-Research/shinyapps-stg.urban.org/issues)</p>
+						<p>To request an R package for the Shiny server, please request it using <a href="https://github.com/UI-Research/shinyapps-stg.urban.org/issues">GitHub issues</a></p>
 					</section>
 
-					<section>
-					</section>
 				</section>
 
 				<section>
@@ -180,7 +187,7 @@
 
 					<section>
 						<h3>Human</h3>
-						<p>Aaron Williams (<a href="awilliams@urban.org">awilliams@urban.org)</a></p>
+						<p>Aaron Williams (<a href="awilliams@urban.org">awilliams@urban.org</a>)</p>
 					</section>
 				</section>
 

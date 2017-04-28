@@ -2,7 +2,7 @@ library(shiny)
 library(tidyverse)
 
 #Sys.setenv(R_GSCMD = "C:\\Program Files\\gs\\gs9.20\\bin\\gswin64c.exe")
-source("urban_theme_windows.R")
+source('https://raw.githubusercontent.com/UrbanInstitute/urban_R_theme/master/urban_theme_windows.R')
 
 ui <- fluidPage(
   
@@ -34,7 +34,8 @@ server <- function(input, output) {
       filter(carat >= input$carat[1] & carat <= input$carat[2]) %>%
       ggplot(aes_string(x = input$element, fill = input$element)) +
         geom_bar() +
-        labs(title = "Diamond Plot") +
+        labs(title = "Diamond Plot",
+             caption = "Urban Institute") +
         scale_y_continuous(expand = c(0, 0))
   
   })
